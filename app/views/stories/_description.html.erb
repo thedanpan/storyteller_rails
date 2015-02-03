@@ -1,0 +1,2 @@
+<%= @story.id %>  |  <%= link_to "#{@story.title.capitalize}", story_path(@story.id) %>
+ |  <%= @story.genre.name %>  |  <% if @story.fiction == true %><%= 'Fiction' %><% else %><%= 'Non-Fiction' %><% end %>  |  By: <%= @story.user.name %>  |  Published on: <%= @story.date_published %>

@@ -1,0 +1,23 @@
+<div class="story">
+  <h6><%= @story.title.capitalize %></h6>
+  <%= @story.content %> </br></br></br>
+  By: <%= @story.user.name %> </br></br>
+  Published on: <%= @story.date_published %> </br>
+</div><br><br>
+
+<%= link_to 'Edit Story', edit_story_path(@story) %>  |
+<%= link_to 'Destroy Story', @story,
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %><br><br>
+
+<hr>
+
+<h4>Comments:</h4>
+<%= render @story.comments %>
+
+<h4>Add a Comment:</h4>
+<%= render 'comments/form' %>
+
+<hr>
+
+<%= link_to 'Back to Stories', stories_path %>

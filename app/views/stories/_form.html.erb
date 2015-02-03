@@ -1,0 +1,41 @@
+<%= form_for @story do |f| %>
+
+  <% if @story.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@story.errors.count, "error") %>
+        prohibited this story from being saved:
+      </h2>
+      <ul>
+        <% @story.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :content %><br>
+    <%= f.text_field :content %>
+  </p>
+  <p>
+    <%= f.label :user_id %> ( id )<br>
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.label :genre_id %> ( id )<br>
+    <%= f.text_field :genre_id %>
+  </p>
+  <p>
+    <%= f.label :fiction %> ( true or false )<br>
+    <%= f.text_field :fiction %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
