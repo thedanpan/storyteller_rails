@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StoryTeller</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+
+  <div id="main">
+
+    <header>
+      <a href="/"><img src="isosi.png" class="logo"></a>
+    </header>
+
+    <div id="container">
+      <%= yield %>
+    </div>
+
+    <footer>
+      Brought to you by <a href="http://github.com/thedanpan" target="_blank">+dandans</a>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+<p>
+  <strong>Commentor id:</strong>
+  <%= comment.commentor_id %>
+</p>
+<p>
+  <strong>Comment:</strong>
+  <%= comment.content %>
+</p>
+
+<p>
+  <%= link_to 'Destroy Comment', [comment.story, comment],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>

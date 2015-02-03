@@ -1,0 +1,27 @@
+development:
+  adapter: postgresql
+  host: localhost
+  username:
+  password:
+  database: db/storyteller_rails_dev
+  pool: 5
+  timeout: 5000
+
+
+test:
+  adapter: postgresql
+  host: localhost
+  username:
+  password:
+  database: db/storyteller_rails_test
+  pool: 5
+  timeout: 5000
+
+production:
+  adapter: postgresql
+  host: localhost
+  username:
+  password:
+  database: db/storyteller_rails
+  pool: 5
+  timeout: 5000
