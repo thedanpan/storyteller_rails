@@ -3,7 +3,7 @@ development:
   host: localhost
   username:
   password:
-  database: db/storyteller_rails_v2_dev
+  database: db/storyteller_rails_dev
   pool: 5
   timeout: 5000
 
@@ -13,7 +13,7 @@ test:
   host: localhost
   username:
   password:
-  database: db/storyteller_rails_v2_test
+  database: db/storyteller_rails_test
   pool: 5
   timeout: 5000
 
@@ -22,6 +22,6 @@ production:
   host: localhost
   username:
   password:
-  database: db/storyteller_rails_v2
+  database: db/storyteller_rails
   pool: 5
   timeout: 5000
